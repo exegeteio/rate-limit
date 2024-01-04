@@ -5,7 +5,7 @@ require 'active_support/all'
 class Rack::Attack
   Rack::Attack.cache.store = ActiveSupport::Cache::MemoryStore.new
 
-  throttle('req/ip', limit: 500, period: 30.seconds) do |req|
+  throttle('req/ip', limit: 30, period: 30.seconds) do |req|
     req.ip
   end
 
