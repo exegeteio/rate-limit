@@ -9,7 +9,7 @@ Adds a `X-THROTTLED-UNTIL` header with a 30 second limit.
 Use docker, it's easiest:
 
 ```sh
-docker run --rm -p 3000:3000 --name rate-limit exegeteio/rate-limit
+docker run --rm -p 3000:3000 --name rate-limit exegete46/rate-limit
 ```
 
 Make requests on port 3000.
